@@ -1,0 +1,59 @@
+baseurl = "http://www.christmasinrva.com"
+languageCode = "en-us"
+title = "Christmas in RVA"
+theme = "hugo-creative-theme"
+googleAnalytics = ""
+
+[params]
+
+	# You can use Markdown syntax for urls [text](//url.to/source) for
+	# most longer texts.
+
+	# All icons using Fontawesome's icon font. Look at http://fontawesome.io/icons/
+	# for more icons. The icons are represented by their corresponding
+	# CSS class.
+
+	# All projects of the portfolio are defined in their own files.
+	# You can find example projects at 'exampleSite/data/projects'. Copy the 'projects'
+	# folder into the 'data' directory at the root of this Hugo site.
+	# For more information take a look at the README.
+
+	# To provide some metadata for search engines feel free to add some
+	# information about you and your website.
+	name = "Hill City Church"
+	description = "Hill City Church is a non-denominational church in Richmond, VA whose mission is to help connect people to the life giving message of Jesus."
+
+	# The path must be relative to the static folder
+	favicon = "favicon.ico"
+
+
+	# Navigation
+	[params.navigation]
+		brand = "Christmas In RVA"
+
+		[params.navigation.links]
+			about     = "Register"
+
+
+	# Hero section
+	[params.hero]
+		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
+		slogan     = " "
+
+
+	# About section
+	[params.about]
+		headline    = "We'd love for you to join us!"
+		description = "In order for us to plan our services, we’ve set up tickets so that you can let us know which service you and your family plan to attend. Everyone is invited and can attend any of the 3 service times! You can reserve tickets for a service using the \"Register\" button below. We hope to see you there!"
+		services = "9:30, 11:00am and 7:00pm"
+		buttonText  = "Register"
+
+	# Footer section
+	[params.footer]
+		services	= "Sunday Services<br>8:30, 9:45, 11:00 AM, 4:00 PM"
+		location	= "Hill City Church <br> 2101 Maywill St.<br>Richmond, VA 23230"
+		address		= "P.O. Box 18160<br>Richmond, VA 23226"
+ 
+		[params.footer.socialMedia]
+			facebook  = "https://www.facebook.com/hillcityrva/"
+			instagram = "https://www.instagram.com/hillcityrva/?hl=en"
