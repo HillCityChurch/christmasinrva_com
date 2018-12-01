@@ -39,7 +39,7 @@ a:focus {
 
 #about a,
 #footer a {
-    color: #333;
+    color: rgb(85, 85, 85);
 }
 
 #about a:hover,
@@ -51,7 +51,8 @@ a:focus {
 
 #footer {
     padding: 70px 0;
-    height: 300px;
+    min-height: 300px;
+    background-color: #fff;
 }
 
 h1,
@@ -72,16 +73,21 @@ p {
 }
 
 .bg-primary {
-    background-color: #202625;
+    background-color: #38393d;
+}
+
+.bg-secondary {
+    background-color: #fff;
 }
 
 .bg-dark {
     color: #fff;
-    background-color: #222;
+    background-color: #38393d;
 }
 
 .text-faded {
-    color: rgba(255,255,255,.7);
+    color: #e5e5e5;
+
 }
 
 section {
@@ -97,9 +103,8 @@ aside {
 }
 
 .navbar-default {
-    border-color: rgba(34,34,34,.05);
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    background-color: #fff;
+    background-color: #df5a35;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -109,7 +114,7 @@ aside {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
-    color: rgb(217, 164, 41);
+    color: white;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
@@ -122,7 +127,7 @@ aside {
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
-    color: #222;
+    color: #fff;
 }
 
 .navbar-default .nav > li>a:hover,
@@ -143,12 +148,11 @@ aside {
 
 @media(min-width:768px) {
     .navbar-default {
-        border-color: rgba(255,255,255,.3);
-        background-color: transparent;
+        background-color: #df5a35;
     }
 
     .navbar-default .navbar-header .navbar-brand {
-        color: rgba(255,255,255,.7);
+        color: #fff;
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
@@ -158,16 +162,15 @@ aside {
 
     .navbar-default .nav > li>a,
     .navbar-default .nav>li>a:focus {
-        color: rgba(255,255,255,.7);
+        color: #fff;
     }
 
     .navbar-default .nav > li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
-        color: #fff;
+        color: rgb(217, 164, 41);
     }
 
     .navbar-default.affix {
-        border-color: rgba(34,34,34,.05);
         background-color: #fff;
     }
 
@@ -194,12 +197,13 @@ aside {
 
 header {
     position: relative;
+    margin-left: -1px;
     width: 100%;
     min-height: 375px;
     text-align: center;
     color: #fff;
     background-color: black;
-    background-image: url(../img/christmas-logo.png), linear-gradient(270deg, black, black 80%, #121212);
+    background-image: url(../img/christmas_in_rva.jpeg), linear-gradient(270deg, black, black 80%, #121212);
     background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -244,6 +248,9 @@ header .header-content .header-content-inner p {
         margin-top: 43px;
         min-height: 220px;
     }
+    footer {
+        text-align: center;
+    }
     @media(min-width:375px) {
         header {
             margin-top: 43px;
@@ -279,6 +286,39 @@ header .header-content .header-content-inner p {
     }
 }
 
+.video {
+    display: none;
+}
+
+@media(min-width:667px) {
+    .vimeo_link {
+        display: none;
+    }
+    .video { 
+        display: block;
+    }
+    @media(min-width:1200px) {
+        header {
+            margin-top: 0;
+            min-height: 100%;
+        }
+    }
+}
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
 @media(min-width:768px) {
     header .header-content {
         position: absolute;
@@ -306,6 +346,114 @@ header .header-content .header-content-inner p {
 .hc-logo img {
     height: 35px;
     margin: 7px 7px 7px -7px;
+}
+
+.cf:before, .cf:after {
+    content: " ";
+    display: table
+}
+
+.cf:after {
+    clear: both
+}
+
+/**
+* @section Gallery
+* Gallery Styles here
+*/
+
+.gallery .featured {
+    background-color: #000;
+    box-shadow: 0 0 40px #000;
+    height: 540px;
+    margin-bottom: 50px
+}
+
+.shadow {
+    height: 200px;
+    position: absolute;
+    top: 0;
+    width: 60px;
+    z-index: 30
+}
+
+.gallery .shadow-left {
+    display: none;
+    background: url('../img/shadow.png') no-repeat;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    left: 0
+}
+
+.gallery .shadow-right {
+    display: none;
+    background: url('../img/shadowr.png') no-repeat;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    right: 0
+}
+
+.gallery .carousel-inner {
+    float: left;
+    margin-top: 20px;
+    overflow: hidden;
+    width: 960px;
+}
+
+.gallery .slider {
+    position: relative;
+    width: 9999px;
+    padding-left: 0px;
+}
+
+.gallery .slider li {
+    float: left;
+    height: 158px;
+    list-style: none;
+    margin-right: 60px;
+    width: 280px
+}
+
+.gallery .slider li.current a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.gallery .slider li.current a:after {
+    box-shadow: 0 0 0 8px rgb(217, 164, 41) inset;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.gallery .slider li img {
+    max-width: 100%
+}
+
+.gallery .controll {
+    cursor: pointer;
+    display: none;
+    height: 54px;
+    position: absolute;
+    top: 70px;
+    width: 54px;
+    z-index: 5
+}
+
+.gallery .controll.prev {
+  background: url('../img/prev-slider.png') no-repeat;
+  left: -84px
+}
+
+.gallery .controll.next {
+  background: url('../img/next-slider.png') no-repeat;
+  right: -84px
 }
 
 @media(max-width: 768px) {
@@ -409,7 +557,7 @@ header .header-content .header-content-inner p {
 .btn-default {
     border-color: rgb(217, 164, 41);
     color: white;
-    background-color: #rgb(217, 164, 41)fff;
+    background-color: rgb(217, 164, 41)fff;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -546,9 +694,6 @@ img::-moz-selection {
     background: 0 0;
 }
 
-body {
-    webkit-tap-highlight-color: #222;
-}
 
 #map {
     height: 300px;

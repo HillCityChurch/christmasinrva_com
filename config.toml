@@ -16,7 +16,8 @@ googleAnalytics = ""
 		brand = "Christmas In RVA"
 
 		[params.navigation.links]
-			about = "Register"
+			register = "Register"
+			video	 = "Video"
 
 
 	# Hero section
@@ -25,23 +26,20 @@ googleAnalytics = ""
 		slogan = " "
 
 
-	# About section
-	[params.about]
+	# Registration section
+	[params.register]
 		headline     = "We'd love for you to join us!"
 		description1 = "At Hill City, our mission is to be a safe place for you to explore your faith."
-
 		description2 = "Come join us - we’d be honored to have you during one of our Christmas Eve services this year! Everyone is invited and can attend any of the 3 service times listed below. In order for us to plan ahead, we’ve set up a ticket system so everyone can make it. Choose a time that works best for you and your family by using the \"Register\" button below."
-
-		description3 = "Casual Attire / Kids welcome in services."
-
+		description3 = "Casual Attire / Childcare provided for ages 0-5. (No need to include them when registering for tickets.)"
 		description4 = "We hope to see you there!"
 
-		services 	 = "9:30, 11:00am and 7:00pm"
+		services 	 = "9:00, 11:00am and 4:00pm"
 		buttonText   = "Register"
 
 	# Footer section
 	[params.footer]
-		services	= "Sundays:<br>8:30, 9:45, 11:00 AM, 4:00 PM"
+		services	= "Sundays:<br>9:30 and 11:00 AM"
 		location	= "Hill City Church <br> 2101 Maywill St.<br>Richmond, VA 23230"
 		address		= "P.O. Box 18160<br>Richmond, VA 23226"
  
