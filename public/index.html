@@ -147,10 +147,10 @@ src="https://www.facebook.com/tr?id=265688044081778&ev=PageView&noscript=1"
                     <p class="text-faded">At Hill City, our mission is to be a safe place for you to explore your faith.</p>
                 
                 
-                    <p class="text-faded">Come join us - we’d be honored to have you during one of our Christmas Eve services this year! Everyone is invited and can attend any of the 3 service times listed below. In order for us to plan ahead, we’ve set up a ticket system so everyone can make it. Choose a time that works best for you and your family by using the &ldquo;Register&rdquo; button below.</p>
+                    <p class="text-faded">Come join us - we’d be honored to have you during one of our Christmas Eve services this year! Everyone is invited and can attend any of the 3 service times listed below. In order for us to plan ahead, we’ve set up a ticket system so everyone can make it. Choose a time that works best for you and your family by using the modal below.</p>
                 
                 
-                    <p class="text-faded">Casual Attire / Childcare provided for ages 0-5. (No need to include them when registering for tickets.)</p>
+                    <p class="text-faded">Casual Attire / Childcare provided for ages 0-5. No need to include them when registering for tickets.</p>
                 
                 
                     <p class="text-faded">We hope to see you there!</p>
@@ -159,11 +159,27 @@ src="https://www.facebook.com/tr?id=265688044081778&ev=PageView&noscript=1"
                     <p class="text">Christmas Eve Services: <span style="color: rgb(217, 164, 41); margin-left: 4px;">9:00, 11:00am and 4:00pm</span></p>
                 
                 
-                    <noscript><a href="https://www.eventbrite.com/e/christmas-eve-at-hill-city-tickets-53029453523" rel="noopener noreferrer" target="_blank"></noscript>
-                    <form action="https://www.eventbrite.com/e/christmas-eve-at-hill-city-tickets-53029453523">
-                        <button id="eventbrite-widget-modal-trigger-53029453523" class="btn btn-default btn-xl" type="submit" style="color: #282828;" >Register</button>
-                    </form>
                     
+                    <div id="eventbrite-widget-container-53029453523"></div>
+
+                    <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+                    <script type="text/javascript">
+                        var exampleCallback = function() {
+                            console.log('Order complete!');
+                        };
+
+                        window.EBWidgets.createWidget({
+                            
+                            widgetType: 'checkout',
+                            eventId: '53029453523',
+                            iframeContainerId: 'eventbrite-widget-container-53029453523',
+
+                            
+                            iframeContainerHeight: 425,  
+                            onOrderComplete: exampleCallback  
+                        });
+                    </script>
                 
             </div>
         </div>

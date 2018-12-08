@@ -30,8 +30,8 @@ googleAnalytics = ""
 	[params.register]
 		headline     = "We'd love for you to join us!"
 		description1 = "At Hill City, our mission is to be a safe place for you to explore your faith."
-		description2 = "Come join us - we’d be honored to have you during one of our Christmas Eve services this year! Everyone is invited and can attend any of the 3 service times listed below. In order for us to plan ahead, we’ve set up a ticket system so everyone can make it. Choose a time that works best for you and your family by using the \"Register\" button below."
-		description3 = "Casual Attire / Childcare provided for ages 0-5. (No need to include them when registering for tickets.)"
+		description2 = "Come join us - we’d be honored to have you during one of our Christmas Eve services this year! Everyone is invited and can attend any of the 3 service times listed below. In order for us to plan ahead, we’ve set up a ticket system so everyone can make it. Choose a time that works best for you and your family by using the modal below."
+		description3 = "Casual Attire / Childcare provided for ages 0-5. No need to include them when registering for tickets."
 		description4 = "We hope to see you there!"
 
 		services 	 = "9:00, 11:00am and 4:00pm"
