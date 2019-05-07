@@ -39,7 +39,7 @@ googleAnalytics = ""
 
 	# Footer section
 	[params.footer]
-		services	= "Sundays:<br>9:30 and 11:00 AM"
+		services	= "Sundays:<br>9 and 10:30am"
 		location	= "Hill City Church <br> 2101 Maywill St.<br>Richmond, VA 23230"
 		address		= "P.O. Box 18160<br>Richmond, VA 23226"
  

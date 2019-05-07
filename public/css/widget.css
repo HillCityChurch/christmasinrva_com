@@ -1,7 +1,7 @@
-section.widget * {
+feedback.widget * {
     box-sizing: border-box;
   }
-  section.widget .bubble {
+  feedback.widget .bubble {
     width: 60px;
     height: 60px;
     background-color: #4fafaf;
@@ -18,10 +18,10 @@ section.widget * {
     background-position: center;
     cursor: pointer;
   }
-  section.widget .bubble:hover {
+  feedback.widget .bubble:hover {
     background-color: darken(#4fafaf, 10%);
   }
-  section.widget .box {
+  feedback.widget .box {
     position: fixed;
     right: 30px;
     bottom: 100px;
@@ -37,7 +37,7 @@ section.widget * {
     font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
     text-align: center;
   }
-  section.widget .top {
+  feedback.widget .top {
     width: 100%;
     height: 240px;
     background-color: #4fafaf;
@@ -49,14 +49,14 @@ section.widget * {
     padding: 40px;
     font-size: 22px;
   }
-  section.widget .bottom {
+  feedback.widget .bottom {
     width: 100%;
     height: 60px;
   }
-  section.widget form {
+  feedback.widget form {
     height: 100%;
   }
-  section.widget input {
+  feedback.widget input {
     height: 100%;
     width: 100%;
     font-size: 14px;
@@ -64,29 +64,29 @@ section.widget * {
     border: none;
     resize: none;
   }
-  section.widget input:focus {
+  feedback.widget input:focus {
     outline: none;
   }
-  section.widget ::-webkit-input-placeholder {
+  feedback.widget ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: #b3b3b3;
   }
-  section.widget ::-moz-placeholder {
+  feedback.widget ::-moz-placeholder {
     /* Firefox 19+ */
     color: #b3b3b3;
   }
-  section.widget :-ms-input-placeholder {
+  feedback.widget :-ms-input-placeholder {
     /* IE 10+ */
     color: #b3b3b3;
   }
-  section.widget :-moz-placeholder {
+  feedback.widget :-moz-placeholder {
     /* Firefox 18- */
     color: #b3b3b3;
   }
-  section.widget form {
+  feedback.widget form {
     position: relative;
   }
-  section.widget .send {
+  feedback.widget .send {
     width: 30px;
     height: 30px;
     position: absolute;

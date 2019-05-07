@@ -1,4 +1,4 @@
 *.pem
 *.crt
 *.cert
-.DS_Store
+**/.DS_Store

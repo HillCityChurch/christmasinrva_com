@@ -32,8 +32,8 @@
       bgColor   = document.getElementById('lytics-script').getAttribute("bg-color");
   
       if (bgColor) {
-        $('section.widget .bubble').css('background-color', bgColor);
-        $('section.widget .box .top').css('background-color', bgColor);
+        $('feedback.widget .bubble').css('background-color', bgColor);
+        $('feedback.widget .box .top').css('background-color', bgColor);
       }
   
       // OPEN BOX
@@ -107,7 +107,7 @@
     function appendHtml () {
       var script = $('#lytics-script');
       script.after(`
-        <section class="widget">
+        <feedback class="widget">
           <div class="bubble" id="an-nw1j0"></div>
           <div class="box" id="an-pl1x8">
             <div class="top">
@@ -120,7 +120,7 @@
               </form>
             </div>
           </div>
-        </section>
+        </feedback>
       `);
       getStarted();
     };
